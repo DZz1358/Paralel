@@ -3,437 +3,557 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="" alt="">
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div>
+                    <a href="#" class="header-logo">
+                        <img src="img/Logo.png" alt="">
+                        <span class="text-regular">Parallels</span>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link"><img src="img/Search.png" alt=""></a>   
+                </nav>
             </div>
-            <a href=""></a>
-        </nav>
-        <div class="head-slider">
-            <h1></h1>
-            <div></div>
-            <div></div>
         </div>
     </header>
 
-    <section class="our-services">
-        <h3>Our Services</h3>
-        <div>
-            <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
+
+    <section class="main-content">
+        <section class="intro">
+            <div class="intro-slider">
+                <h1 class="intro-head-text">Welcome to Parallels</h1>
+                <h2 class="intro-subhead-text">Clean Responsive Parallax Theme</h2>
             </div>
-            <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
+        </section>
+        
+        <section class="our-services">
+            <div class="container">
+                <h3 class="our-services-text">Our Services</h3>
+                <div class="our-services__info">
+                    <div class="our-services__card">
+                        <div class="card-img">
+                            <img src="img/Browser.png"  alt="">
+                        </div>
+                        <h3 class="card-text">WebDesign</h3>
+                        <p class="card-text__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, hic! Magnam molestiae odit provident</p>
+                    </div>
+                    <div class="our-services__card">
+                        <div class="card-img">
+                            <img src="img/iPhone.png" alt="">
+                        </div>
+                        <h3 class="card-text" >UIDesign</h3>
+                        <p class="card-text__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, hic! Magnam molestiae odit provident</p>
+                    </div>
+                    <div class="our-services__card">
+                        <div class="card-img">
+                            <img src="img/Trash.png" alt="">
+                        </div>
+                        <h3 class="card-text">Prototype</h3>
+                        <p class="card-text__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, hic! Magnam molestiae odit provident</p>
+                    </div>
+                    <div class="our-services__card">
+                        <div class="card-img">
+                            <img src="img/Camera.png" alt="">
+                        </div>
+                        <h3 class="card-text">Photography</h3>
+                        <p class="card-text__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, hic! Magnam molestiae odit provident</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
+        </section>
+
+        <section class="do-you-like">
+            <div class="container">
+                <div class="liked_container">
+                    <h2>Do you like this clean theme?</h2>
+                    <button class="button_like">Purchaise</button>
+                    <button class="button_like">Follow</button>
+                </div>
+    
             </div>
-            <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
+        </section>
+    
+        <section class="portfolio">
+            <div class="container">
+                <h3 class="section-header">Portfolio</h3>
+                <div class="tabs-content">
+                    <ul class="tabs-nav">
+                        <li class="tabs-list">Web-Design</li>
+                        <li class="tabs-list">UI Design</li>
+                        <li class="tabs-list">Prototype</li>
+                        <li class="tabs-list">Photography</li>
+                    </ul>
+                <div class="portfolio-card">
+                    <div class="card-info">
+                        <img src="img/Photo.png" class="card-info_img" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="img/Photo4.png" alt="" class="card-info_img">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <img src="" alt="">
+                        <div class="about-card">
+                            <h4>Clean night sky</h4>
+                            <p>Photography</p>
+                            <div class="card-liked">
+                                <img src="img/Chat.png" alt="">
+                                <p>53</p>
+                                <img src="img/Heart.png" alt="">
+                                <p>230</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <div class="load-more">
+                        <h6 class="load-more__text">Load more</h6>
+                        <div class="arrow"></div>    
+                    </div>
+                </div>
+
+                </div>
+    
             </div>
-        </div>
+        </section>
+
+        <section class="do-you-like">
+            <div class="container">
+                <div class="liked_container">
+                    <h2>Pricing table</h2>
+                    <P>Clean beautiful flat table</P>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="price">
+            <div class="container">
+                <h3 class="section-header">Our price</h3>
+                <div class="top-section">
+                    <div class="price-card">
+                        <h4 class="card-header">Website hosting</h4>
+                        <div class="price-box">
+                            <p>$10/month</p>
+                        </div>
+                        <div class="card-info__price">
+                            <p><b>2x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>1x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price">Purchaise</a>
+                    </div>
+                    <div class="price-card">
+                        <h4 class="card-header">Website hosting</h4>
+                        <div class="price-box">
+                            <p>$10/month</p>
+                        </div>
+                        <div class="card-info__price">
+                            <p><b>2x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>1x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price">Purchaise</a>
+                    </div>
+                    <div class="price-card">
+                        <h4 class="card-header">Website hosting</h4>
+                        <div class="price-box">
+                            <p>$10/month</p>
+                        </div>
+                        <div class="card-info__price">
+                            <p><b>2x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>1x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price">Purchaise</a>
+                    </div>
+                </div>
+                <div class="low-section">
+                    <div class="price-card__xs">
+                        <h5 class="card-header">Website hosting</h5>
+                        <div class="price-box__xs">
+                            <p>$10/month</p>
+                        </div>
+                        <div class="card-info__price__xs">
+                            <p><b>2x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>1x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price__xs">Purchaise</a>
+                    </div>
+                    <div class="price-card__xs">
+                        <h5 class="card-header">Reseller cloud</h5>
+                        <div class="price-box__xs">
+                            <p>$135/month</p>
+                        </div>
+                        <div class="card-info__price__xs">
+                            <p><b>5x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>5x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price__xs">Purchaise</a>
+                    </div>
+                    <div class="price-card__xs">
+                        <h5 class="card-header">Dedicated hosting</h5>
+                        <div class="price-box__xs">
+                            <p>$235/month</p>
+                        </div>
+                        <div class="card-info__price__xs">
+                            <p><b>10x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>10x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price__xs">Purchaise</a>
+                    </div>
+                    <div class="price-card__xs">
+                        <h5 class="card-header">Website hosting</h5>
+                        <div class="price-box__xs">
+                            <p>$10/month</p>
+                        </div>
+                        <div class="card-info__price__xs">
+                            <p><b>2x</b> option 1</p>
+                            <p><b>Free</b> option 2</p>
+                            <p><b>Unlimited</b> option 3</p>
+                            <p><b>Unlimited</b> option 4</p>
+                            <p><b>1x</b> option 5</p>
+                        </div>
+                        <a href="#" class="button-like__price__xs">Purchaise</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="low-section_title">Client Adout Us</h4>
+                    <div class="about-us_low">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet inventore officiis autem doloribus ipsum amet, atque repudiandae sint itaque explicabo alias, nobis animi. vel quibusdam iste ab! Laudantium, iusto? Minus.</p>
+                        <a href="#">#PERRY MALITON</a>
+                    </div>
+                </div>
+    
+            </div>
+        </section> 
+        
+        <section class="do-you-like">
+            <div class="container">
+                <div class="liked_container">
+                    <h2>Our teams</h2>
+                    <P>We a professional and progressive team</P>
+                </div>
+            </div>
+        </section>
+   
+        <section class="about-us">
+            <div class="about-content">
+                <div class="container">
+                    <h3 class="section-header">About Us</h3>
+                    <div class="about-us_content">
+                        <div class="about-us_container">
+                            <img src="img/Photo.png" alt="">
+                            <h5>Mark Cream</h5>
+                            <span>Developer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem quaerat, magnam quas perferendis dolorem laudantium aliquam repudiandae minus sed</p>
+                        </div>
+                        <div class="about-us_container">
+                            <img src="img/Photo1.png" alt="">
+                            <h5>Antonio Paramo</h5>
+                            <span>Fire Effects</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem quaerat.</p>
+                        </div>
+                        <div class="about-us_container">
+                            <img src="img/Photo2.png" alt="">
+                            <h5>Mario Ballote</h5>
+                            <span>Big Boss</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem quaerat, magnam quas perferendis dolorem  minus sed</p>
+                        </div>
+                        <div class="about-us_container">
+                            <img src="img/Photo4.png" alt="">
+                            <h5>Ben Buggatin</h5>
+                            <span>Designer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem quaerat</p>
+                        </div>
+                    </div>
+                    <h4 class="low-section_title">Our skills</h4>
+
+                    <div class="our-skills">
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        
+        <section class="do-you-like">
+            <div class="container">
+                <div class="liked_container_xs">
+                    <h2>YOU LOOKED OVER 6000 PX</h2>
+                    <P>That's Great!</P>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="contact-us">
+            <div class="container">
+                <h3 class="section-header">Contact Us</h3>
+                <div class="contact-form">
+                    <div class="contact-form_in">
+                        <h5>MAIL</h5>
+                        <form action="#" class="contact-form_input">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Mail">
+                            <br>
+                            <textarea name="" id="" cols="100" rows="10" placeholder="Message"></textarea>
+                            <br>
+                            <button>Sumbit mail</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h5>MORE INFO</h5>
+                        <div class="contact-form_info">
+                            <div class="form-info_text">
+                                <p><b>2 (555) 888 555 03 20</b></p>
+                                <p><b>info@domain.com</b></p>
+                                <p>skype: <b>username</b></p>
+                            </div>
+                            <div class="form-info_text">
+                                <p>John Dowl</p>
+                                <p><b>Salt Talke city. UT</b></p>
+                                <p><b>87550</b></p>
+                            </div>
+                            <div class="form-info_button">
+                                <a href="#" ">Purchaise</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="do-you-like">
+            <div class="container">
+                <div class="liked_container_xs">
+                    <h2>CONNECT WITH US</h2>
+                    <p>Follow Us On Social Networks</p>
+                    <div class="social-link">
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object2.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object3.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object4.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object5.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object8.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object7.png" alt=""></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="#"><img src="img/Vector-Smart-Object6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
     </section>
-
-    <section class="separator"></section>
-
-    <section class="portfolio">
-        <h3 class="section-header"></h3>
-        <div class="tabs">
-            <div class="tabs-nav">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="tabs-content">
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h6></h6>
-                    <p></p>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="separator"></section>
-
-
-    <section class="price">
-        <h3 class="section-header"></h3>
-        <div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-        </div>
-        <div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-            <div class="price-card">
-                <h6 class="card-header"></h6>
-                <div class="price-box">
-                    <p></p>
-                </div>
-                <div class="card-info">
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                    <p><b>5x</b>option 1</p>
-                </div>
-                <a href="#">Purchaise</a>
-            </div>
-        </div>
-        <div>
-            <h5>Client Adout Us</h5>
-            <div>
-                <p></p>
-                <a href=""></a>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="separator"></section>
-
-
-    <section class="about-us">
-        <h3 class="section-header"></h3>
-        <div class="about-content">
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h5></h5>
-                    <span></span>
-                    <p></p>
-                </div>
-            </div>
-            <div class="our-skills">
-                <div class="bar">
-                    <div class="progress"></div>
-                </div>
-                <div class="bar">
-                    <div class="progress"></div>
-                </div>
-                <div class="bar">
-                    <div class="progress"></div>
-                </div>
-                <div class="bar">
-                    <div class="progress"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="separator"></section>
-
-
-    <section class="contact-us">
-        <h3 class="section-header">Contact Us</h3>
-        <div>
-            <div>
-                <h5>Mail</h5>
-                <form action="#">
-                    <input type="text"><input type="text">
-                    <textarea name="" id="" cols="30" rows="10"></textarea><textarea name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit">
-                </form>
-            </div>
-            <div>
-                <h5>More Info</h5>
-                <div>
-                    <div>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="separator"></section>
-
-    <section class="social-box">
-        <h1>Connect with us</h1>
-        <p>Follow Us On Social Networks</p>
-        <div class="social-link">
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-        </div>
-    </section>
-
-    <section class="separator"></section>
-
     <footer class="footer">
         <div class="footer-top">
-            <div class="footer-column">
-                <h5 class="column-header"></h5>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <p></p>
-                        <p></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h5 class="column-header"></h5>
-                <div>
-                    <ul>
-                        <li>
-                            <p></p>
-                            <p></p>
-                        </li>
-                        <li>
-                            <p></p>
-                            <p></p>
-                        </li>
-                        <li>
-                            <p></p>
-                            <p></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h5 class="column-header"></h5>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column_info">
+                        <h5 class="column-header">RECENT TWEETS</h5>
+                        <ul class="column-info_list">
+                            <li>
+                                <img src="img/twitter.png" alt="">
+                                <span>Lorem ipsum dolor sit amet</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit et quos mollitia fugit doloribus consectetur blanditiis provident porro.</p>
+                            </li>
+                            <li>
+                                <img src="img/twitter.png" alt="">
+                                <span>Lorem ipsum dolor sit amet </span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit et quos mollitia fugit doloribus consectetur blanditiis provident porro.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column_info">
+                        <h5 class="column-header">RECENT POSTS</h5>
+                            <ul class="column-info_list">
+                                <li>
+                                    <p>11.12.2019</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </li>
+                                <li>
+                                    <p>11.12.2020</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </li>
+                                <li>
+                                    <p>11.12.2021</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="footer-column_info">
+                        <h5 class="column-header">PHOTO STREAM</h5>
+                        <div class="column-info_img">
+                            <img src="img/Photo5.png" alt="">
+                            <img src="img/Photo6.png" alt="">
+                            <img src="img/Photo7.png" alt="">
+                            <img src="img/Photo8.png" alt="">
+                            <img src="img/Photo9.png" alt="">
+                            <img src="img/Photo10.png" alt="">
+                            <img src="img/Photo11.png" alt="">
+                            <img src="img/Photo5.png" alt="">
+                            <img src="img/Photo6.png" alt="">
+                            <img src="img/Photo7.png" alt="">
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
         <div class="under-footer">
-            <img src="" alt="Logo">
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
+            <div class="container">
+                <div class="under-footer_info">
+                    <a href="#" class="header-logo">
+                        <img src="img/Logo.png" alt="">
+                        <span class="text-regular">Parallels</span>
+                    </a>
+                    <div class="under-footer_text">
+                        <span><b>2 (555) 888 555 03 20</b></span>
+                        <span><b>info@domain.com</b></span>
+                        <span>skype: <b>username</b></span>
+                    </div>    
+                </div>
             </div>
+
         </div>
     </footer>
 
