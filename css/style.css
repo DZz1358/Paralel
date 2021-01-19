@@ -764,7 +764,7 @@ background-color: #CFD8DC;
     height: 425px;
     text-align: center;
     color: #fff;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .about-us_container > h5{
@@ -940,20 +940,13 @@ background-color: #CFD8DC;
     color: #6c6c6c;
 }
 
-.column-info_list > li > p {
-    margin: 20px 0 ;
-}
-
-
 .column-info_img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-gap: 10px;
     margin-top: 10px;
 }
-
-
 
 .under-footer{
     background-color: #222327;
@@ -990,7 +983,6 @@ background-color: #CFD8DC;
     }
     .column-info_img{
         display: grid;
-        grid-template-columns: repeat(3,30%);
         grid-template-rows: repeat(3,1fr);
         grid-gap: 10px;
     
@@ -1042,7 +1034,8 @@ background-color: #CFD8DC;
     .portfolio-card{
         grid-template-columns: repeat(2, 48%);
         grid-template-rows: repeat(4, 50%);
-        grid-gap: 4%;
+        grid-gap: 5%;
+        overflow: hidden;
     }
 
     .price-card{
@@ -1079,6 +1072,7 @@ background-color: #CFD8DC;
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap: 15px;
+
     }
     .footer-columns{
         display: grid;
@@ -1121,12 +1115,13 @@ background-color: #CFD8DC;
         grid-template-rows: repeat(4, 50%);
         grid-gap: 4%;
     }
-
+    .tabs-nav{
+        padding-left: 0;
+    }
     .price-card{
         height: max-content;
         padding-bottom: 30px;
     }
-
     .price-card > h4 {
         font-size: 12px;
     }
@@ -1135,20 +1130,16 @@ background-color: #CFD8DC;
     }
     .top-section{
         grid-template-columns: repeat(1 , 1fr);
-
     }
-
     .low-section{
         grid-template-columns: repeat(2 , 45%);
     }
-
     .button-like__price__xs {
         font-size: 12px;
     }
     .card-info__price__xs{
         font-size: 12px;
     }
-
     .about-us_low{
         font-size: 10px;
     }
@@ -1158,8 +1149,6 @@ background-color: #CFD8DC;
     .contact-form > div > h5 {
         font-size: 14px;
     }
-
-
     .about-us_content{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1195,12 +1184,11 @@ background-color: #CFD8DC;
     .contact-form > div:last-child{
         width: 100%;
     }
-
     .form-info_button{
         margin-top: 35px;
     }
     .footer-column_info > h5 {
-        font-size: 12px;
+        font-size: 10px;
     }
     .column-info_list > li > p{
         font-size: 10px;
@@ -1214,12 +1202,11 @@ background-color: #CFD8DC;
         font-size: 12px;
     } 
     .under-footer_text{
-        font-size: 10px;
+        font-size: 9px;
     }
     .social-link{
         display: grid;
         grid-template-columns: repeat(4, 20%);
-
     }
     .liked_container > h2{
         font-size: 35px;
@@ -1235,7 +1222,13 @@ background-color: #CFD8DC;
     .liked_container_xs > p{
         font-size: 20px;
     }
-    
+    .low-section_title::after{
+        content: none;
+    }
+    .low-section_title::before{
+        content: none;
+    }
+
 
 
 
@@ -1407,7 +1400,13 @@ background-color: #CFD8DC;
     .under-footer_text{
         font-size: 10px;
     }
-    
+    .low-section_title::after{
+        content: none;
+    }
+    .low-section_title::before{
+        content: none;
+    }
+
 
 }
 
