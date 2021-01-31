@@ -75,22 +75,12 @@ p{
 .nav-link{
     color: #fff;
     margin-left: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
 }
 
 .nav-link:hover{
     color: #7fa242;
 }
 
-.nav-link:hover img{
-    color: #7fa242;
-}
-
-.nav-link > a > img:hover{
-    background-image: #7fa242;
-
-}
 
 /* Бургер эксперемент */
 
@@ -192,59 +182,61 @@ background-color: #CFD8DC;
 
 
 /* INTRO SLIDER */
-.intro{
-    background: url(/img/Intro.png) no-repeat center / cover;
-    width: 100%;
-    height: max-content;
+.slider{
+    margin-bottom: -5px;
+}
+.slider_item{
     position: relative;
 }
-
-.intro-slider{
-    padding: 30% 0%;
+.slick-track{
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-arrow{
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+}
+.slider_item img{
+    width: 100%;
+    height:100vh;
 
 }
-.intro::after{
-    content: "";
-    width: 35px;
-    height: 35px;
-    border-radius : 50%;
-    background: url(/img/circled-right.png) no-repeat center center;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: calc(50% - 25px);
-    left: 18px;
-    cursor: pointer;
-    transform: rotate(180deg);
+/* Стрелка влево */
+.slick-arrow.slick-next{
+    right: 20px;
+    background: url(/img/circled-right.png) 0 0 / 100% no-repeat;
 }
-
-
-.intro::before{
-    content: "";
-    width: 35px;
-    height: 35px;
-    border-radius : 50%;
-    background: url(/img/circled-right.png) no-repeat center center;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: calc(50% - 25px);
-    right: 18px;
-    cursor: pointer;
+/* Стрелка вправо */
+.slick-arrow.slick-prev{
+    left: 20px;
+    background: url(/img/circled-left.png)0 0 / 100% no-repeat;
 }
 
 .intro-head-text{
+    position:absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 55px;
     color: #fff;
     font-weight: 300;
+    padding: 5% 20%;
+
 }
 
 .intro-subhead-text{
+    position:absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     color: #fff;
     font-weight: 500;
+    padding: 10% 20%;
 
 }
 
@@ -883,7 +875,7 @@ background-color: #CFD8DC;
 .social-link {
     display: grid;
     grid-template-columns: repeat(8, 5%);
-    grid-gap: 5%;
+    grid-gap: 2%;
 }
 
 .social-icon{
@@ -971,6 +963,13 @@ background-color: #CFD8DC;
 }
 
 @media  (min-width: 1024px) and (max-width: 1366px) {
+    .intro-subhead-text{
+        font-size: 50px;
+    }
+    .intro-head-text{
+        font-size: 40px;
+    }
+
     .about-us_content{
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -1025,6 +1024,15 @@ background-color: #CFD8DC;
 } 
 
 @media  (min-width: 768px) and (max-width: 1023px) {
+    .intro-subhead-text{
+        font-size: 26px;
+    }
+    .intro-head-text{
+        font-size: 30px;
+    }
+    .slick-arrow{
+        display: none;
+    }
     .navbar{
         display: none;
     }
@@ -1100,6 +1108,16 @@ background-color: #CFD8DC;
 
 }
 @media  (min-width: 480px) and (max-width: 767px) {
+    .intro-subhead-text{
+        font-size: 18px;
+    }
+    .intro-head-text{
+        font-size: 22px;
+    }
+    .slick-arrow{
+        display: none;
+    }
+
     .navbar{
         display: none;
     }
@@ -1240,13 +1258,13 @@ background-color: #CFD8DC;
         display: none;
     }
     .intro-subhead-text{
-        font-size: 20px;
+        font-size: 12px;
     }
     .intro-head-text{
-        font-size: 25px;
+        font-size: 14px;
     }
-    .intro-slider {
-        padding: 30% 10%;
+    .slick-arrow{
+        display: none;
     }
     .liked_container > h2{
         font-size: 35px;
