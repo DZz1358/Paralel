@@ -184,6 +184,7 @@ background-color: #CFD8DC;
 /* INTRO SLIDER */
 .slider{
     margin-bottom: -5px;
+    position: relative;
 }
 .slider_item{
     position: relative;
@@ -196,7 +197,7 @@ background-color: #CFD8DC;
 }
 .slick-arrow{
     position: absolute;
-    top: 60%;
+    top: 50%;
     z-index: 1;
     width: 40px;
     height: 40px;
@@ -209,12 +210,11 @@ background-color: #CFD8DC;
     height:100vh;
 
 }
-/* Стрелка влево */
+
 .slick-arrow.slick-next{
     right: 20px;
     background: url(/img/circled-right.png) 0 0 / 100% no-repeat;
 }
-/* Стрелка вправо */
 .slick-arrow.slick-prev{
     left: 20px;
     background: url(/img/circled-left.png)0 0 / 100% no-repeat;
@@ -302,7 +302,7 @@ background-color: #CFD8DC;
 /*======== DO you LIKE What you See?) =======*/
 
 .do-you-like{
-    height: 435px;
+    height: 50vh;
     background-image: url(/img/Intro.png);
     position: relative;
     background-repeat: no-repeat;
@@ -334,7 +334,7 @@ background-color: #CFD8DC;
     font-size: 40px;
     color: #fff;
     font-weight: 400;
-    padding-top: 160px;
+    padding-top: 120px;
 }
 
 .liked_container_xs > p{
@@ -372,7 +372,6 @@ background-color: #CFD8DC;
     height: max-content;
     background-color: #282a2e;
     padding-bottom: 40px;
-    
 }
 
 .section-header{
@@ -412,13 +411,11 @@ background-color: #CFD8DC;
 
 .portfolio-card{
     width: 100%;
-    height: 470px;
+    height: 70vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 15px;
-    overflow:hidden;
-
+    grid-gap: 10px;
 }
 
 .card-info{
@@ -442,6 +439,7 @@ background-color: #CFD8DC;
 .about-card:hover{
     width: 80%;
     height: 80%;
+    border-radius: 5%;
     background-color: #232323;
     margin: auto;
     position: absolute;
@@ -582,7 +580,7 @@ background-color: #CFD8DC;
 .low-section{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    grid-gap: 40px;
+    grid-gap: 30px;
     margin-bottom: 65px;
 }
 
@@ -969,7 +967,10 @@ background-color: #CFD8DC;
     .intro-head-text{
         font-size: 40px;
     }
-
+    .slider_item img{
+        width: 100%;
+        height:100vh;
+    }
     .about-us_content{
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -989,10 +990,6 @@ background-color: #CFD8DC;
 
     .card-info{
         background-color: #282a2e ;
-    }
-
-    .card-info_img{
-        object-fit: contain;
     }
 
     .price-card__xs > h5 {
@@ -1026,13 +1023,19 @@ background-color: #CFD8DC;
 @media  (min-width: 768px) and (max-width: 1023px) {
     .intro-subhead-text{
         font-size: 26px;
-    }
+    }    
     .intro-head-text{
         font-size: 30px;
     }
     .slick-arrow{
         display: none;
+        z-index: -1;
     }
+    .slider_item img{
+        width: 100%;
+        height: 50vh;
+    }
+
     .navbar{
         display: none;
     }
@@ -1040,12 +1043,14 @@ background-color: #CFD8DC;
         font-size: 10px;
     }
     .portfolio-card{
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 50%);
-        grid-gap: 5%;
+        grid-gap: 1%;
         overflow: hidden;
     }
-
+    .liked_container > h2{
+        font-size: 50px;
+    }
     .price-card{
         height: max-content;
         padding-bottom: 30px;
@@ -1060,10 +1065,6 @@ background-color: #CFD8DC;
     .price-card__xs > h5{
         font-size: 14px;
     }
-    .low-section{
-        grid-template-columns: repeat(4 , 20%);
-    }
-
     .button-like__price__xs {
         font-size: 12px;
     }
@@ -1103,7 +1104,7 @@ background-color: #CFD8DC;
         margin-top: 10px;
     }
     .form-info_button{
-        margin-top: 50px;
+        margin-top: 45px;
     }
 
 }
@@ -1116,8 +1117,12 @@ background-color: #CFD8DC;
     }
     .slick-arrow{
         display: none;
+        z-index: -1;
     }
-
+    .slider_item img{
+        width: 100%;
+        height: 50vh;
+    }
     .navbar{
         display: none;
     }
@@ -1131,7 +1136,7 @@ background-color: #CFD8DC;
     .portfolio-card{
         grid-template-columns: repeat(2, 48%);
         grid-template-rows: repeat(4, 50%);
-        grid-gap: 4%;
+        overflow: hidden;
     }
     .tabs-nav{
         padding-left: 0;
@@ -1220,15 +1225,14 @@ background-color: #CFD8DC;
         font-size: 12px;
     } 
     .under-footer_text{
-        font-size: 9px;
+        font-size: 8px;
     }
     .social-link{
         display: grid;
-        grid-template-columns: repeat(4, 20%);
+        grid-template-columns: repeat(4, 10%);
     }
     .liked_container > h2{
         font-size: 35px;
-        margin-bottom: 0;
     }
     .liked_container > p{
         font-size: 25px;
@@ -1246,11 +1250,6 @@ background-color: #CFD8DC;
     .low-section_title::before{
         content: none;
     }
-
-
-
-
-
 }
 
 @media  (min-width: 320px) and (max-width: 479px) {
@@ -1265,14 +1264,27 @@ background-color: #CFD8DC;
     }
     .slick-arrow{
         display: none;
+        z-index: -1;
+    }
+
+    .slider_item img{
+        width: 100%;
+        height: 30vh;
+    }
+    .our-services-text , .section-header{
+        font-size: 24px;
+        padding: 15px;
+        margin-bottom:0;
+    }
+    .do-you-like{
+        height: 35vh;
     }
     .liked_container > h2{
-        font-size: 35px;
-        margin-bottom: 0;
+        font-size: 25px;
     }
     .liked_container > p{
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .liked_container_xs > h2{
         font-size: 20px;
@@ -1358,7 +1370,7 @@ background-color: #CFD8DC;
     }
     .social-link{
         display: grid;
-        grid-template-columns: repeat(4, 20%);
+        grid-template-columns: repeat(4, 15%);
     }
 
     .about-us_content{
@@ -1400,6 +1412,9 @@ background-color: #CFD8DC;
     }
     .form-info_button{
         margin-top: 35px;
+    }
+    .liked_container_xs > h2{
+        padding-top:30px;
     }
     .footer-column_info > h5 {
         font-size: 12px;
