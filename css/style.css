@@ -334,7 +334,7 @@ background-color: #CFD8DC;
     font-size: 40px;
     color: #fff;
     font-weight: 400;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .liked_container_xs > p{
@@ -434,7 +434,6 @@ background-color: #CFD8DC;
     opacity: 0;
     height: 100%;
 }
-
 
 .about-card:hover{
     width: 80%;
@@ -937,6 +936,10 @@ background-color: #CFD8DC;
     grid-gap: 10px;
     margin-top: 10px;
 }
+.column-info_img img{
+    width: 100%;
+    height: 100%;
+}
 
 .under-footer{
     background-color: #222327;
@@ -1314,9 +1317,9 @@ background-color: #CFD8DC;
     .portfolio-card{
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(8, 50%);
-        grid-gap: 4%;
         overflow:hidden;
     }
+
     .price-box__xs{
         font-size: 12px;
         line-height: 3.5;
@@ -1387,9 +1390,10 @@ background-color: #CFD8DC;
     .column-info_img{
         display: grid;
         grid-template-columns: repeat(1,100%);
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
         grid-gap: 10px;
         padding-bottom: 10px;
+        overflow: hidden;
     }
     .contact-form_input > input {
         width: 100%;
