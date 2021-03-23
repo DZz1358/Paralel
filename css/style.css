@@ -40,8 +40,8 @@ p{
 
 .header{
     width: 100%;
-    height: 114px;
-    background-color: #282a2e;
+    height: 12vh;
+    background-color: #313337;
 }
 
 .text-regular{
@@ -83,7 +83,6 @@ p{
 
 /* INTRO SLIDER */
 .slider{
-    margin-bottom: -5px;
     position: relative;
 }
 .slider_item{
@@ -107,17 +106,17 @@ p{
 }
 .slider_item img{
     width: 100%;
-    height:100vh;
+    height:100%;
 
 }
 
 .slick-arrow.slick-next{
     right: 20px;
-    background: url(img/circled-right.png) 0 0 / 100% no-repeat;
+    background: url(../img/circled-right.png) 0 0 / 100% no-repeat;
 }
 .slick-arrow.slick-prev{
     left: 20px;
-    background: url(img/circled-left.png)0 0 / 100% no-repeat;
+    background: url(../img/circled-left.png)0 0 / 100% no-repeat;
 }
 
 .intro-head-text{
@@ -169,6 +168,7 @@ p{
 }
 
 .card-img{
+    display: block;
     position: relative;
     width: 100px;
     height: 100px;
@@ -202,13 +202,15 @@ p{
 /*======== DO you LIKE What you See?) =======*/
 
 .do-you-like{
+    position: relative;
     height: 50vh;
-    background-image: url(img/Intro.png);
+    background-image: url(../img/intro.jpg);
     position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
 }
+
 
 .liked_container{
     height: max-content;
@@ -622,14 +624,14 @@ p{
 }
 
 .about-us_low::before{
-    content: url(img/skobl.png);
+    content: url(../img/skobl.png);
     position: absolute;
     left: -100px;
 }
 
 
 .about-us_low::after{
-    content: url(img/skobr.png);
+    content: url(../img/skobr.png);
     position: absolute;
     right: -100px;
 }
@@ -653,7 +655,6 @@ p{
     height: 425px;
     text-align: center;
     color: #fff;
-    /* margin-bottom: 60px; */
 }
 
 .about-us_container > h5{
@@ -847,7 +848,7 @@ p{
 }
 
 .under-footer_info{
-    padding-top: 55px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -872,7 +873,7 @@ p{
     }
     .slider_item img{
         width: 100%;
-        height:100vh;
+        height:100%;
     }
     .about-us_content{
         display: grid;
@@ -936,7 +937,7 @@ p{
     }
     .slider_item img{
         width: 100%;
-        height: 50vh;
+        height: 100%;
     }
 
     .navbar{
@@ -1024,7 +1025,7 @@ p{
     }
     .slider_item img{
         width: 100%;
-        height: 50vh;
+        height: 100%;
     }
     .navbar{
         display: none;
@@ -1172,7 +1173,7 @@ p{
 
     .slider_item img{
         width: 100%;
-        height: 30vh;
+        height: 100%;
     }
     .our-services-text , .section-header{
         font-size: 24px;
