@@ -6,8 +6,15 @@ $(document).ready(function() {
                 elem.css("display","grid");
                 break;
             case "ui-design":
+                elem.css("display","flex");
+                break;
+            case "prototype":
                 elem.css("display","block");
                 break;
+            case "photography":
+                elem.css("display","block");
+                break;
+    
         }
         elem.siblings().css("display","none");
     }
