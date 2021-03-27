@@ -1,15 +1,35 @@
-$(document).ready(function(){
+$(document).ready(function() {
+    const activateTab = (tabName) => {
+        const elem = $(`#${tabName}-tab-content`);
+        switch (tabName) {
+            case "web-design":
+                elem.css("display","grid");
+                break;
+            case "ui-design":
+                elem.css("display","block");
+                break;
+        }
+        elem.siblings().css("display","none");
+    }
     $('.slider').slick({
         arrows: true,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
     });
-});
 
-$(document).ready(function() {
     $('.header__burger').click(function() {
         $('.header__burger,.navbar').toggleClass('active');
         $('body').toggleClass('lock');
     });
+
+    $('.tabs-list').first().addClass('active');
+    activateTab("web-design");
+
+    $('.tabs-list').click(function(item) {
+        $(this).siblings().removeClass('active');
+        $(this).addClass( 'active' );
+        activateTab($(this).attr('id'));
+    });
+
 }); 
