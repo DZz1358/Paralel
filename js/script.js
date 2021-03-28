@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     $('.header__burger').click(function() {
         $('.header__burger,.navbar').toggleClass('active');
-        $('body').toggleClass('lock');
+        // $('body').toggleClass('lock');
     });
 
     $('.tabs-list').first().addClass('active');
