@@ -676,13 +676,13 @@ p {
 }
 
 .about-us_low::before {
-  content: url(/img/skobl.png);
+  content: url(../img/skobl.png);
   position: absolute;
   left: -100px;
 }
 
 .about-us_low::after {
-  content: url(/img/skobr.png);
+  content: url(../img/skobr.png);
   position: absolute;
   right: -100px;
 }
@@ -708,11 +708,6 @@ p {
   text-align: center;
   color: #fff;
   /* margin-bottom: 60px; */
-}
-
-.about_us-img {
-  /* width: 100%;
-    height: 100%; */
 }
 
 .about-us_container > h5 {
