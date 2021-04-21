@@ -77,6 +77,51 @@ p {
   display: block;
 }
 
+section#yak2::before {
+  content: '';
+  display: block;
+  height: 7vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+
+section#yak3::before {
+  content: '';
+  display: block;
+  height: 7vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+section#yak3::before {
+  content: '';
+  display: block;
+  height: 7vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+section#yak4::before {
+  content: '';
+  display: block;
+  height: 7vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+section#yak5::before {
+  content: '';
+  display: block;
+  height: 6vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+section#yak6::before {
+  content: '';
+  display: block;
+  height: 7vh;
+  margin-top: -6vh;
+  visibility: hidden;
+}
+
+
 .navbar {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
