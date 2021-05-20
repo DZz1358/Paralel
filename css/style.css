@@ -947,9 +947,16 @@ section#yak6::before {
   font-size: 16px;
   font-weight: 300;
 }
-
-.under-footer_text > span {
+.under-footer_text{
+  display: flex;
+  flex-direction: column;
+}
+.under-footer_text > p {
   margin-left: 25px;
+}
+.under-footer_link{
+  text-decoration: none;
+  color: #989898;
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
